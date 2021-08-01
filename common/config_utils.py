@@ -14,6 +14,16 @@ class ConfigUtils:
         value = self.config.get('default','url')
         return value
 
+    @property
+    def log_path(self):
+        value = self.config.get('default', 'log_path')
+        return value
+
+    @property
+    def log_level(self):
+        value = self.config.get('default', 'log_level')
+        return int(value)
+
 
 config = ConfigUtils()
 if __name__=='__main__':

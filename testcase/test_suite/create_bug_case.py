@@ -14,7 +14,6 @@ class CreateBug(unittest.TestCase):
         time.sleep(2)
         self.driver.quit()
 
-
     def test_create_bug(self):
         '''新增bug测试'''
         self.driver.find_element(By.XPATH, '//li[@data-id="qa"]').click()
